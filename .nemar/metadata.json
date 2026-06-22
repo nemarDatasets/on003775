@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "SRM Resting-state EEG",
-  "description": "This dataset comprises resting-state electroencephalography (EEG) recordings from 111 healthy control subjects acquired using a BioSemi ActiveTwo system with 64 electrodes. Subjects underwent four-minute eyes-closed resting-state EEG sessions, with a subset of participants having repeat recordings at a later timepoint. The raw data are provided with average reference and minimal preprocessing, alongside a cleaned derivative dataset processed through an automated pipeline and demographic/cognitive test data.",
-  "methods_description": "EEG data were recorded using a BioSemi ActiveTwo system with 64 electrodes positioned according to the extended 10-20 system (10-10). Each recording session consisted of four minutes of continuous resting-state EEG acquired with subjects' eyes closed. Raw signals were rereferenced to average reference without additional filtering. Cleaned derivative data were preprocessed using a fully automated pipeline including artifact detection and channel interpolation.",
+  "description": "This dataset comprises resting-state electroencephalography (EEG) recordings from 111 healthy control subjects acquired using a BioSemi ActiveTwo system with 64 electrodes. Subjects were recorded during four minutes of continuous EEG with eyes closed, with some subjects undergoing repeat recordings at a later timepoint. The dataset includes both raw EEG data rereferenced to average reference and a derived cleaned dataset preprocessed with an automated pipeline, along with demographic and cognitive test data.",
+  "methods_description": "EEG data were recorded using a BioSemi ActiveTwo system with 64 electrodes positioned according to the extended 10-20 system (10-10). Four minutes of continuous resting-state EEG were acquired from each subject with eyes closed. Raw data signals were rereferenced to average reference without additional filtering. Derived cleaned data were preprocessed using a fully automated pipeline including artifact detection and channel interpolation, with results stored as EEGLAB .set files.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,13 +21,15 @@
       "term": "resting-state"
     },
     {
-      "term": "electroencephalography"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
       "term": "healthy controls"
     },
     {
-      "term": "neuroimaging"
+      "term": "signal processing"
     },
     {
       "term": "brain activity"
