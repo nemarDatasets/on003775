@@ -1,29 +1,79 @@
 {
   "version": "2.0",
-  "dataset_id": "on003775",
-  "source": "openneuro",
-  "source_id": "ds003775",
+  "pipeline_stage": "validated",
   "title": "SRM Resting-state EEG",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
-    "Christoffer Hatlestad-Hall": {},
+    "Christoffer Hatlestad-Hall": {
+      "orcid": "0000-0002-2501-5378"
+    },
     "Trine Waage Rygvold": {},
     "Stein Andersson": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003775.v1.2.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003775",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003775",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.dib.2022.108647",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.6.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".gitattributes",
+    ".json",
+    ".m",
+    ".mat",
+    ".md",
+    ".pdf",
+    ".set",
+    ".tsv",
+    ".xyz"
+  ],
+  "description": "A BIDS-structured resting-state electroencephalography dataset comprising 111 healthy control subjects recorded using a BioSemi ActiveTwo 64-channel system. The dataset includes four-minute continuous EEG recordings acquired with eyes closed, with some subjects having longitudinal recordings at two timepoints. Raw data are provided with average referencing and minimal preprocessing, alongside a cleaned derivative dataset processed through automated artifact removal and channel interpolation.",
+  "methods_description": "EEG data were recorded using a BioSemi ActiveTwo system with 64 electrodes positioned according to the extended 10-20 system (10-10 scheme). Each recording session consisted of four minutes of continuous resting-state EEG acquired with subjects' eyes closed. Raw signals were rereferenced to average reference without additional filtering. A cleaned derivative dataset was generated using an automated preprocessing pipeline including artifact detection, bad channel identification, and interpolation.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "electroencephalography"
+    },
+    {
+      "term": "neuroimaging"
+    },
+    {
+      "term": "healthy controls"
+    },
+    {
+      "term": "longitudinal study"
+    }
+  ],
+  "source_hash": "3fda55d2ff753020f341a722b58a34439152d94592815aed2d830821ec6f6ad4"
 }
