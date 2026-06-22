@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "SRM Resting-state EEG",
+  "description": "This dataset comprises resting-state electroencephalography (EEG) recordings from 111 healthy control subjects acquired using a BioSemi ActiveTwo system with 64 electrodes. Subjects underwent four-minute eyes-closed resting-state EEG sessions, with a subset of participants having repeat recordings at a later timepoint. The raw data are provided with average reference and minimal preprocessing, alongside a cleaned derivative dataset processed through an automated pipeline and demographic/cognitive test data.",
+  "methods_description": "EEG data were recorded using a BioSemi ActiveTwo system with 64 electrodes positioned according to the extended 10-20 system (10-10). Each recording session consisted of four minutes of continuous resting-state EEG acquired with subjects' eyes closed. Raw signals were rereferenced to average reference without additional filtering. Cleaned derivative data were preprocessed using a fully automated pipeline including artifact detection and channel interpolation.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,12 +13,27 @@
     "Trine Waage Rygvold": {},
     "Stein Andersson": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds003775.v1.2.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "electroencephalography"
+    },
+    {
+      "term": "healthy controls"
+    },
+    {
+      "term": "neuroimaging"
+    },
+    {
+      "term": "brain activity"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003775",
       "identifier_type": "URL",
@@ -31,15 +48,20 @@
       "identifier": "10.1016/j.dib.2022.108647",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003775.v1.2.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "22.2 GB (324 files)"
   ],
   "formats": [
     ".edf",
@@ -51,29 +73,8 @@
     ".pdf",
     ".set",
     ".tsv",
-    ".xyz"
+    ".xyz",
+    ".yml"
   ],
-  "description": "A BIDS-structured resting-state electroencephalography dataset comprising 111 healthy control subjects recorded using a BioSemi ActiveTwo 64-channel system. The dataset includes four-minute continuous EEG recordings acquired with eyes closed, with some subjects having longitudinal recordings at two timepoints. Raw data are provided with average referencing and minimal preprocessing, alongside a cleaned derivative dataset processed through automated artifact removal and channel interpolation.",
-  "methods_description": "EEG data were recorded using a BioSemi ActiveTwo system with 64 electrodes positioned according to the extended 10-20 system (10-10 scheme). Each recording session consisted of four minutes of continuous resting-state EEG acquired with subjects' eyes closed. Raw signals were rereferenced to average reference without additional filtering. A cleaned derivative dataset was generated using an automated preprocessing pipeline including artifact detection, bad channel identification, and interpolation.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "resting-state"
-    },
-    {
-      "term": "electroencephalography"
-    },
-    {
-      "term": "neuroimaging"
-    },
-    {
-      "term": "healthy controls"
-    },
-    {
-      "term": "longitudinal study"
-    }
-  ],
-  "source_hash": "3fda55d2ff753020f341a722b58a34439152d94592815aed2d830821ec6f6ad4"
+  "source_hash": "535879e8df2b5dbd7e3ad7a7d92ae15e7a111c7b032927e3d1b8d75013f045cc"
 }
