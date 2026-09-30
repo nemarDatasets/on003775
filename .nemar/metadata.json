@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "SRM Resting-state EEG",
-  "description": "This dataset comprises resting-state electroencephalography (EEG) recordings from 111 healthy control subjects acquired using a BioSemi ActiveTwo system with 64 electrodes. Subjects were recorded during four minutes of continuous EEG with eyes closed, with some subjects undergoing repeat recordings at a later timepoint. The dataset includes both raw EEG data rereferenced to average reference and a derived cleaned dataset preprocessed with an automated pipeline, along with demographic and cognitive test data.",
-  "methods_description": "EEG data were recorded using a BioSemi ActiveTwo system with 64 electrodes positioned according to the extended 10-20 system (10-10). Four minutes of continuous resting-state EEG were acquired from each subject with eyes closed. Raw data signals were rereferenced to average reference without additional filtering. Derived cleaned data were preprocessed using a fully automated pipeline including artifact detection and channel interpolation, with results stored as EEGLAB .set files.",
+  "description": "This dataset contains four-minute eyes-closed resting-state EEG recordings extracted from the Stimulus-Selective Response Modulation (SRM) project paradigm at the University of Oslo. It includes 64-channel BioSemi recordings from 111 healthy control participants at a first session (t1), with a subset re-recorded at a later session (t2). Raw data are provided with a fully automated cleaned derivative, along with demographic and cognitive test scores.",
+  "methods_description": "EEG was recorded with a BioSemi ActiveTwo system using 64 electrodes placed according to the extended 10-20 (10-10) system. Each recording comprises four minutes of continuous, unfiltered eyes-closed resting-state data, rereferenced to the average reference. A cleaned derivative was produced with a basic automated preprocessing pipeline, in which bad channels were interpolated.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,31 +18,26 @@
       "term": "EEG"
     },
     {
-      "term": "resting-state"
+      "term": "resting state"
     },
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "eyes closed"
     },
     {
       "term": "healthy controls"
     },
     {
-      "term": "signal processing"
+      "term": "Stimulus-Selective Response Modulation"
     },
     {
-      "term": "brain activity"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003775",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003775",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -55,6 +50,11 @@
       "identifier": "10.18112/openneuro.ds003775.v1.2.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003775",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -63,7 +63,7 @@
     "eeg"
   ],
   "sizes": [
-    "22.2 GB (324 files)"
+    "20.71 GB (324 files)"
   ],
   "formats": [
     ".edf",
